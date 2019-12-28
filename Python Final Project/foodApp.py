@@ -253,7 +253,6 @@ def bill():  # new window definition
     print_oi.config(text="ODD53618"+str(orderid))
 
 
-
 def msg():
     messagebox.showinfo("Confirmed", "Your Order Will be Delivered Shortly")
 
@@ -303,7 +302,7 @@ burger_button1.place(x=10, y=150)
 # Burger 1 Name And Price
 vegBurger = Label(master, text="Veg Burger", fg="red", bg="white", font=LabelFont)
 vegBurger.place(x=22, y=280)
-vegBurgerPrice = Label(master, text="50$", fg="red", bg="white", font=LabelFont)
+vegBurgerPrice = Label(master, text="50₹", fg="red", bg="white", font=LabelFont)
 vegBurgerPrice.place(x=200, y=280)
 # Burger 1 Entry Fields
 burger_qty = PhotoImage(file="qty_button3.png")
@@ -320,7 +319,7 @@ burger_button2.place(x=10, y=320)
 # Burger 2 Name And Price
 cBurger = Label(master, text="Chicken Burger", fg="red", bg="white", font=LabelFont)
 cBurger.place(x=8, y=450)
-cBurgerPrice = Label(master, text="70$", fg="red", bg="white", font=LabelFont)
+cBurgerPrice = Label(master, text="70₹", fg="red", bg="white", font=LabelFont)
 cBurgerPrice.place(x=200, y=450)
 # Burger 2 Entry Fields
 burger_qty_button2 = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=burger2Fun2)
@@ -336,7 +335,7 @@ burger_button3.place(x=10, y=480)
 # Burger 2 Name And Price
 BossBurger = Label(master, text="Boss Whooper", fg="red", bg="white", font=LabelFont)
 BossBurger.place(x=10, y=610)
-BossBurgerPrice = Label(master, text="150$", fg="red", bg="white", font=LabelFont)
+BossBurgerPrice = Label(master, text="150₹", fg="red", bg="white", font=LabelFont)
 BossBurgerPrice.place(x=195, y=610)
 # Burger 3 Entry Fields
 burger_qty_button3 = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=burger3Fun2)
@@ -352,7 +351,7 @@ burger_button4.place(x=1, y=650)
 # Burger 2 Name And Price
 cBossBurger = Label(master, text="Chilly Cheese \nWhooper", fg="red", bg="white", font=LabelFont)
 cBossBurger.place(x=13, y=770)
-cBossBurgerPrice = Label(master, text="200$", fg="red", bg="white", font=LabelFont)
+cBossBurgerPrice = Label(master, text="200₹", fg="red", bg="white", font=LabelFont)
 cBossBurgerPrice.place(x=190, y=770)
 # Burger 4 Entry Fields
 burger_qty_button4 = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=burger4Fun2)
@@ -368,7 +367,7 @@ fries_button.place(x=540, y=150)
 # Fries Name And Price
 sfries = Label(master, text="Reg Fries", fg="red", bg="white", font=LabelFont)
 sfries.place(x=555, y=280)
-sfriesPrice = Label(master, text="30$", fg="red", bg="white", font=LabelFont)
+sfriesPrice = Label(master, text="30₹", fg="red", bg="white", font=LabelFont)
 sfriesPrice.place(x=695, y=280)
 # Fries Entry Fields
 fries_qty_button = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=friesFun2)
@@ -384,7 +383,7 @@ fries_button2.place(x=530, y=340)
 # Fries 2 Name And Price
 cfries = Label(master, text="Cheese fries", fg="red", bg="white", font=LabelFont)
 cfries.place(x=535, y=450)
-cfriesPrice = Label(master, text="70$", fg="red", bg="white", font=LabelFont)
+cfriesPrice = Label(master, text="70₹", fg="red", bg="white", font=LabelFont)
 cfriesPrice.place(x=695, y=450)
 # Fries 2 Entry Fields
 cfries_qty_button = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=cfriesFun2)
@@ -400,7 +399,7 @@ coke_button.place(x=1040, y=150)
 # Coke Name And Price
 coke_name = Label(master, text="Reg Coke", fg="red", bg="white", font=LabelFont)
 coke_name.place(x=1055, y=280)
-coke_price = Label(master, text="40$", fg="red", bg="white", font=LabelFont)
+coke_price = Label(master, text="40₹", fg="red", bg="white", font=LabelFont)
 coke_price.place(x=1200, y=280)
 # Coke Entry Fields
 coke_qty_button = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=cokeFun2)
@@ -416,7 +415,7 @@ floats_button.place(x=1040, y=320)
 # Floats Name And Price
 floats_name = Label(master, text="Coke Float", fg="red", bg="white", font=LabelFont)
 floats_name.place(x=1045, y=450)
-floats_Price = Label(master, text="60$", fg="red", bg="white", font=LabelFont)
+floats_Price = Label(master, text="60₹", fg="red", bg="white", font=LabelFont)
 floats_Price.place(x=1200, y=450)
 # Floats Entry Fields
 floats_qty_button = Button(master, image=burger_qty, borderwidth=0, bg="white", height=32, command=cokeFloatFun2)
@@ -429,7 +428,9 @@ floats_entry.place(x=1185, y=377)
 total_label = Label(master, text="Total :", fg="red", bg="white", font=("Insaniburger", 23))
 total_label.place(x=810, y=550)
 total_label2 = Label(master, text=total, fg="red", bg="white", font=("Insaniburger", 23))
-total_label2.place(x=930, y=551)
+total_label2.place(x=950, y=551)
+total_label3 = Label(master, text='₹', fg="red", bg="white", font=("Insaniburger", 23))
+total_label3.place(x=930, y=551)
 order = PhotoImage(file="order.png")
 order_button = Button(master, image=order, borderwidth=0, bg="white", relief=FLAT, command=check)
 order_button.place(x=730, y=600)
