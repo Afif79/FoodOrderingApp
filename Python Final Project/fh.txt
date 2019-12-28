@@ -1,0 +1,4 @@
+Veg Burger				        2x				  100
+Chicken Burger				        1x				  70
+Boss Whooper				        1x				 150
+Coke Float				        0x				  0
